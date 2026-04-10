@@ -485,6 +485,27 @@ h3 {
   color: var(--primary-dark);
 }
 
+.publication-group {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.publication-entry p {
+  margin: 0;
+}
+
+.publication-link {
+  color: #1d4ed8;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  color: #1e40af;
+}
+
 .contact-panel {
   padding: 2rem;
   border-radius: var(--radius-lg);
