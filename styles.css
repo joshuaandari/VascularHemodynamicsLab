@@ -327,6 +327,10 @@ h3 {
   margin-top: 2rem;
 }
 
+.about-wide-card-wrap {
+  margin-top: 1.5rem;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 1.8rem;
@@ -372,6 +376,10 @@ h3 {
   min-height: 260px;
   height: 100%;
   max-height: 400px;
+}
+
+.about-wide-card {
+  min-height: 220px;
 }
 
 .project-card {
