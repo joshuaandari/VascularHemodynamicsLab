@@ -332,6 +332,15 @@ h3 {
   font-size: clamp(2rem, 4vw, 3.1rem);
 }
 
+.about-image {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 1.25rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
 .cards-grid,
 .people-grid {
   display: grid;
