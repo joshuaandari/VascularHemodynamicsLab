@@ -133,38 +133,38 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.9fr;
-  grid-template-rows: auto auto;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  column-gap: 2rem;
   align-items: start;
 }
 
 .hero-copy {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 640px;
 }
 
 .hero-side {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .hero-lead {
-  grid-column: 1;
-  grid-row: 1;
+  padding: 0;
 }
 
 .hero-details {
-  grid-column: 1;
-  grid-row: 2;
+  padding: 0;
 }
 
 .hero-image-frame {
-  grid-column: 2;
-  grid-row: 1;
+  width: 100%;
 }
 
 .hero-card {
-  grid-column: 2;
-  grid-row: 2;
+  width: 100%;
 }
 
 .eyebrow,
@@ -179,20 +179,22 @@ h3 {
 
 .hero h1 {
   font-family: "Instrument Serif", serif;
-  font-size: clamp(3.2rem, 6vw, 5.6rem);
+  font-size: clamp(2.7rem, 5vw, 4.5rem);
   font-weight: 400;
+  margin: 0;
 }
 
 .hero-text {
   max-width: 60ch;
   font-size: 1.1rem;
+  margin: 0;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 1.35rem 0 0;
 }
 
 .button {
@@ -307,6 +309,10 @@ h3 {
   margin-bottom: 1.8rem;
 }
 
+#events .section-heading {
+  max-width: 760px;
+}
+
 .section h2 {
   margin-top: 0.5rem;
   font-size: clamp(2rem, 4vw, 3.1rem);
@@ -325,6 +331,11 @@ h3 {
   border-radius: var(--radius-md);
 }
 
+.info-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .person-card {
   position: relative;
 }
@@ -333,6 +344,10 @@ h3 {
 .publication-item h3 {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
+}
+
+.info-card h3 {
+  min-height: 3.2em;
 }
 
 .person-badge {
@@ -409,8 +424,63 @@ h3 {
   border-radius: var(--radius-lg);
 }
 
+.contact-panel h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
 .contact-details p {
   margin: 0 0 1rem;
+  font-size: 1.08rem;
+}
+
+.contact-details {
+  align-self: center;
+  text-align: center;
+}
+
+.contact-link {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+.affiliations-intro {
+  padding-top: 1rem;
+}
+
+.affiliations-intro .container {
+  text-align: center;
+}
+
+.affiliations-label {
+  margin: 0 0 1.75rem;
+}
+
+.affiliations-rule {
+  width: 100%;
+  height: 1px;
+  background: rgba(16, 33, 38, 0.12);
+}
+
+.affiliations-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.affiliation-logo {
+  max-height: 148px;
+  width: auto;
+  object-fit: contain;
 }
 
 .site-footer {
@@ -447,15 +517,14 @@ h3 {
   }
 
   .hero-grid {
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
   }
 
   .hero-lead,
   .hero-details,
   .hero-image-frame,
   .hero-card {
-    grid-column: auto;
-    grid-row: auto;
+    width: 100%;
   }
 
   .site-nav {
