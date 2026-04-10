@@ -134,6 +134,11 @@ h3 {
   align-items: center;
 }
 
+.hero-side {
+  display: grid;
+  gap: 1.25rem;
+}
+
 .eyebrow,
 .section-label,
 .card-label {
@@ -201,6 +206,7 @@ h3 {
 }
 
 .hero-card,
+.hero-image-frame,
 .info-card,
 .person-card,
 .contact-panel,
@@ -208,6 +214,19 @@ h3 {
   background: var(--surface-soft);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
+}
+
+.hero-image-frame {
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-card {
