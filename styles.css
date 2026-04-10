@@ -29,8 +29,11 @@ body {
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(140, 92, 255, 0.24), transparent 30%),
-    radial-gradient(circle at top right, rgba(199, 132, 255, 0.16), transparent 26%),
-    linear-gradient(180deg, #fcf9ff 0%, var(--bg) 52%, #ece2fb 100%);
+    radial-gradient(circle at 85% 35%, rgba(199, 132, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 20% 72%, rgba(167, 116, 255, 0.15), transparent 26%),
+    radial-gradient(circle at 78% 88%, rgba(122, 82, 230, 0.12), transparent 22%),
+    linear-gradient(180deg, #fcf9ff 0%, #f4effb 38%, #efe7fb 68%, #e9ddfb 100%);
+  background-repeat: no-repeat;
 }
 
 img {
@@ -265,7 +268,7 @@ h3 {
 }
 
 .section-tinted {
-  background: linear-gradient(180deg, rgba(216, 239, 231, 0.4), rgba(255, 255, 255, 0));
+  background: transparent;
 }
 
 .section-grid,
@@ -313,6 +316,18 @@ h3 {
   color: var(--primary-dark);
   font-weight: 800;
   margin-bottom: 1rem;
+}
+
+.profile-link {
+  color: #1d4ed8;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.profile-link:hover,
+.profile-link:focus-visible {
+  color: #1e40af;
 }
 
 .publication-list {
