@@ -141,8 +141,8 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 420px;
-  column-gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.5rem;
   align-items: start;
   margin-top: 2rem;
 }
@@ -277,11 +277,58 @@ h3 {
 .hero-card {
   padding: 2rem;
   border-radius: var(--radius-lg);
+  max-height: 560px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .hero-card h2 {
   margin: 0.6rem 0 1rem;
   font-size: 2rem;
+}
+
+.featured-news-scroll {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.featured-news-item {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: white;
+  border: 1px solid rgba(16, 33, 38, 0.08);
+}
+
+.featured-news-item h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.featured-news-item p {
+  margin: 0;
+}
+
+.featured-news-image {
+  display: block;
+  width: 96px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.15rem;
+}
+
+.featured-news-date {
+  margin-bottom: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
 }
 
 .metrics-grid {
@@ -325,6 +372,7 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  scroll-margin-top: 100px;
 }
 
 .about-wide-card-wrap {
@@ -518,6 +566,11 @@ h3 {
 .publication-group {
   display: grid;
   gap: 1.25rem;
+}
+
+.publication-note {
+  margin: -0.5rem 0 1.5rem;
+  font-size: 0.95rem;
 }
 
 .publication-entry p {
