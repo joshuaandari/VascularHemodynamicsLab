@@ -20,7 +20,9 @@
     <header class="site-header">
       <div class="container nav-bar">
         <a class="brand" href="#top">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-mark">
+            <img class="brand-logo" src="photos/uwo.png" alt="Western University logo" />
+          </span>
           <span class="brand-text">Fitzgibbon-Collins Lab</span>
         </a>
         <button
@@ -44,9 +46,6 @@
 
     <main id="top">
       <section class="hero">
-        <div class="container">
-          <img class="hero-banner" src="care.png" alt="Lab banner" />
-        </div>
         <div class="container hero-grid">
           <div class="hero-copy">
             <div class="hero-lead">
@@ -57,6 +56,46 @@
                 <a class="button button-secondary" href="#current-projects-section">Explore Research</a>
                 <a class="button button-secondary" href="#contact">Get In Touch</a>
               </div>
+              <section class="hero-carousel" aria-label="Lab media highlights">
+                <div class="hero-carousel-viewport">
+                  <div class="hero-carousel-track">
+                    <article class="hero-slide is-active">
+                      <img src="photos/care.png" alt="C.A.R.E. Lab banner" />
+                      <div class="hero-slide-caption">
+                        <p class="hero-slide-label">Lab Media</p>
+                        <h3>C.A.R.E. Lab</h3>
+                      </div>
+                    </article>
+                    <article class="hero-slide">
+                      <img src="photos/thamesreal.jpg" alt="Thames Hall at Western University" />
+                      <div class="hero-slide-caption">
+                        <p class="hero-slide-label">Location</p>
+                        <h3>Western University</h3>
+                      </div>
+                    </article>
+                    <article class="hero-slide">
+                      <img src="photos/ut.png" alt="National Undergraduate Research Conference graphic" />
+                      <div class="hero-slide-caption">
+                        <p class="hero-slide-label">Student Spotlight</p>
+                        <h3>Undergraduate Research</h3>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="hero-carousel-controls">
+                  <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous slide">
+                    <span aria-hidden="true">←</span>
+                  </button>
+                  <div class="hero-carousel-dots" aria-label="Carousel slides">
+                    <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Go to slide 1" aria-pressed="true"></button>
+                    <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Go to slide 2" aria-pressed="false"></button>
+                    <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Go to slide 3" aria-pressed="false"></button>
+                  </div>
+                  <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next slide">
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </section>
             </div>
           </div>
 
@@ -73,7 +112,7 @@
                   <p class="featured-news-date">March 2026</p>
                   <h3>National Undergraduate Research Conference</h3>
                   <p>Undergraduate students Jaclyn and Emma present research at UofT</p>
-                  <img class="featured-news-image" src="ut.png" alt="National Undergraduate Research Conference" />
+                  <img class="featured-news-image" src="photos/ut.png" alt="National Undergraduate Research Conference" />
                 </article>
                 <article class="featured-news-item">
                   <p class="featured-news-date">February 2026</p>
@@ -90,7 +129,7 @@
         <div class="container section-grid">
           <div>
             <h2>About The Lab</h2>
-            <img class="about-image" src="thamesreal.jpg" alt="Thames Hall at Western University" />
+            <img class="about-image" src="photos/thamesreal.jpg" alt="Thames Hall at Western University" />
           </div>
           <div>
             <p>
@@ -251,7 +290,7 @@
               </p>
             </article>
             <div class="team-photo-card">
-              <img class="team-photo" src="laura.jpg" alt="Dr. Laura Fitzgibbon-Collins" />
+              <img class="team-photo" src="photos/laura.jpg" alt="Dr. Laura Fitzgibbon-Collins" />
             </div>
           </div>
           <div class="people-grid">
@@ -438,11 +477,11 @@
           <p class="section-label affiliations-label">Affiliations</p>
           <div class="affiliations-rule" aria-hidden="true"></div>
           <div class="affiliations-logos">
-            <img class="affiliation-logo" src="WesternU.png" alt="Western University" />
-            <img class="affiliation-logo" src="Parkwood.png" alt="Parkwood Institute" />
+            <img class="affiliation-logo" src="photos/WesternU.png" alt="Western University" />
+            <img class="affiliation-logo" src="photos/Parkwood.png" alt="Parkwood Institute" />
           </div>
           <div class="affiliations-logos affiliations-logos-secondary">
-            <img class="affiliation-logo" src="CSEP.png" alt="CSEP" />
+            <img class="affiliation-logo" src="photos/CSEP.png" alt="CSEP" />
           </div>
         </div>
       </section>
