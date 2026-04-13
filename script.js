@@ -104,3 +104,57 @@ if (heroCarousel) {
   renderSlide(activeIndex);
   startCarousel();
 }
+
+const mediaCarousel = document.querySelector(".media-carousel");
+
+if (mediaCarousel) {
+  const mediaTrack = mediaCarousel.querySelector(".media-track");
+  const prevButton = mediaCarousel.querySelector("[data-media-prev]");
+  const nextButton = mediaCarousel.querySelector("[data-media-next]");
+  const firstCard = mediaTrack?.querySelector(".media-card");
+
+  const getScrollAmount = () => {
+    if (!mediaTrack || !firstCard) {
+      return 0;
+    }
+
+    const trackStyles = window.getComputedStyle(mediaTrack);
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const gap = parseFloat(trackStyles.columnGap || trackStyles.gap || "0");
+    return cardWidth + gap;
+  };
+
+  const getMaxScroll = () => {
+    if (!mediaTrack) {
+      return 0;
+    }
+
+    return mediaTrack.scrollWidth - mediaTrack.clientWidth;
+  };
+
+  prevButton?.addEventListener("click", () => {
+    if (!mediaTrack) {
+      return;
+    }
+
+    if (mediaTrack.scrollLeft <= 4) {
+      mediaTrack.scrollTo({ left: getMaxScroll(), behavior: "smooth" });
+      return;
+    }
+
+    mediaTrack.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
+  });
+
+  nextButton?.addEventListener("click", () => {
+    if (!mediaTrack) {
+      return;
+    }
+
+    if (mediaTrack.scrollLeft >= getMaxScroll() - 4) {
+      mediaTrack.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+
+    mediaTrack.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+  });
+}
