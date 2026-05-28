@@ -48,9 +48,23 @@
             Menu
           </button>
           <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="#top">Home</a>
             <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#team">Team</a>
+            <div class="nav-dropdown">
+              <a class="nav-dropdown-trigger" href="#research">Research</a>
+              <div class="nav-dropdown-menu" aria-label="Research pages">
+                <a href="#research">Current Research</a>
+                <a href="participate.html">Participate in Research</a>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <a class="nav-dropdown-trigger" href="#team">Team</a>
+              <div class="nav-dropdown-menu" aria-label="Team groups">
+                <a href="team/laura-fitzgibbon-collins.html">Principal Investigator</a>
+                <a href="#graduate-students">Graduate Students</a>
+                <a href="#undergraduate-students">Undergraduate Students</a>
+              </div>
+            </div>
             <a href="#publications">Publications</a>
             <a href="#media">Media</a>
             <a href="#contact">Contact</a>
@@ -90,22 +104,11 @@
             </div>
           </div>
         </div>
-        <div class="container hero-links">
-          <a class="hero-link-card" href="#about">
-            <span class="hero-link-kicker">About</span>
-            <strong>Who we are</strong>
-            <span>Meet the lab and our research focus.</span>
-          </a>
-          <a class="hero-link-card" href="#research">
-            <span class="hero-link-kicker">Research</span>
-            <strong>Current work</strong>
-            <span>Explore themes, projects, and participation.</span>
-          </a>
-          <a class="hero-link-card" href="#contact">
-            <span class="hero-link-kicker">Connect</span>
-            <strong>Get in touch</strong>
-            <span>Reach collaborators, students, or participants.</span>
-          </a>
+        <div class="container hero-image-break">
+          <img
+            src="photos/TCD-1.jpg"
+            alt="Transcranial Doppler ultrasound equipment"
+          />
         </div>
       </section>
 
@@ -228,8 +231,13 @@
           <div class="section-heading">
             <h2>Meet the Lab Team.</h2>
           </div>
-          <div class="people-grid people-grid-single people-grid-featured">
+          <div class="people-grid people-grid-single people-grid-featured" id="principal-investigator">
             <article class="person-card person-card-featured">
+              <a
+                class="card-cover-link"
+                href="team/laura-fitzgibbon-collins.html"
+                aria-label="View Dr. Laura K. Fitzgibbon-Collins profile"
+              ></a>
               <a
                 class="profile-social"
                 href="https://linkedin.com/in/laura-keiko-fitzgibbon-collins-phd-5b940a64/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B2OGnwv7vScaIsMlXpq8oRQ%3D%3D"
@@ -238,6 +246,15 @@
                 rel="noreferrer"
               >
                 in
+              </a>
+              <a
+                class="profile-social profile-orcid"
+                href="https://orcid.org/0009-0002-8268-9843"
+                aria-label="Laura K. Fitzgibbon-Collins ORCID profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
               </a>
               <div class="person-badge">PI</div>
               <h3>Dr. Laura K. Fitzgibbon-Collins</h3>
@@ -262,12 +279,17 @@
               <img class="team-photo" src="photos/laura2.jpg" alt="Dr. Laura Fitzgibbon-Collins" />
             </div>
           </div>
-          <div class="team-subgroup">
+          <div class="team-subgroup" id="graduate-students">
             <div class="team-subgroup-line" aria-hidden="true"></div>
             <p class="team-subgroup-label">Graduate Students</p>
           </div>
           <div class="people-grid people-grid-duo">
-            <article class="person-card">
+            <article class="person-card person-card-with-photo">
+              <a
+                class="card-cover-link"
+                href="team/michaela-nikpal.html"
+                aria-label="View Michaela Nikpal profile"
+              ></a>
               <a
                 class="profile-social"
                 href="#"
@@ -277,11 +299,27 @@
               >
                 in
               </a>
+              <a
+                class="profile-social profile-orcid"
+                href="#"
+                aria-label="Michaela Nikpal ORCID profile placeholder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
+              </a>
+              <div class="person-photo-frame"></div>
               <div class="person-badge">PhD</div>
               <h3>Michaela Nikpal</h3>
               <p>PhD Candidate</p>
+              <p class="person-program">Integrative Biosciences</p>
             </article>
-            <article class="person-card">
+            <article class="person-card person-card-with-photo">
+              <a
+                class="card-cover-link"
+                href="team/joshua-andari.html"
+                aria-label="View Joshua Andari profile"
+              ></a>
               <a
                 class="profile-social"
                 href="https://www.linkedin.com/in/joshua-andari-552147254/"
@@ -291,17 +329,35 @@
               >
                 in
               </a>
+              <a
+                class="profile-social profile-orcid"
+                href="https://orcid.org/0009-0004-4453-0289"
+                aria-label="Joshua Andari ORCID profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
+              </a>
+              <div class="person-photo-frame">
+                <img src="photos/Joshua.png" alt="Joshua Andari" />
+              </div>
               <div class="person-badge">MSc</div>
               <h3>Joshua Andari</h3>
               <p>Master’s Candidate</p>
+              <p class="person-program">Integrative Biosciences</p>
             </article>
           </div>
-          <div class="team-subgroup team-subgroup-undergraduate">
+          <div class="team-subgroup team-subgroup-undergraduate" id="undergraduate-students">
             <div class="team-subgroup-line" aria-hidden="true"></div>
             <p class="team-subgroup-label">Undergraduate Students</p>
           </div>
           <div class="people-grid people-grid-undergraduate">
-            <article class="person-card">
+            <article class="person-card person-card-with-photo">
+              <a
+                class="card-cover-link"
+                href="team/jaclyn-baggley.html"
+                aria-label="View Jaclyn Baggley profile"
+              ></a>
               <a
                 class="profile-social"
                 href="https://www.linkedin.com/in/jaclyn-baggley-3aa220305/"
@@ -311,11 +367,29 @@
               >
                 in
               </a>
+              <a
+                class="profile-social profile-orcid"
+                href="#"
+                aria-label="Jaclyn Baggley ORCID profile placeholder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
+              </a>
+              <div class="person-photo-frame">
+                <img src="photos/Jaclyn.jpeg" alt="Jaclyn Baggley" />
+              </div>
               <div class="person-badge">UG</div>
               <h3>Jaclyn Baggley</h3>
               <p>Undergraduate Student</p>
+              <p class="person-program">Kinesiology</p>
             </article>
-            <article class="person-card">
+            <article class="person-card person-card-with-photo">
+              <a
+                class="card-cover-link"
+                href="team/hamza-gandhi.html"
+                aria-label="View Hamza Gandhi profile"
+              ></a>
               <a
                 class="profile-social"
                 href="https://www.linkedin.com/in/hamza-gandhi-55b607294/"
@@ -325,11 +399,29 @@
               >
                 in
               </a>
+              <a
+                class="profile-social profile-orcid"
+                href="#"
+                aria-label="Hamza Gandhi ORCID profile placeholder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
+              </a>
+              <div class="person-photo-frame">
+                <img src="photos/Hamza.png" alt="Hamza Gandhi" />
+              </div>
               <div class="person-badge">UG</div>
               <h3>Hamza Gandhi</h3>
               <p>USRI Student</p>
+              <p class="person-program person-program-offset">Health Science</p>
             </article>
-            <article class="person-card">
+            <article class="person-card person-card-with-photo">
+              <a
+                class="card-cover-link"
+                href="team/artin-heidarzadeh.html"
+                aria-label="View Artin Heidarzadeh profile"
+              ></a>
               <a
                 class="profile-social"
                 href="https://www.linkedin.com/in/artin-heidarzadeh-3927202b5/"
@@ -339,9 +431,22 @@
               >
                 in
               </a>
+              <a
+                class="profile-social profile-orcid"
+                href="#"
+                aria-label="Artin Heidarzadeh ORCID profile placeholder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                iD
+              </a>
+              <div class="person-photo-frame">
+                <img src="photos/Artin.jpeg" alt="Artin Heidarzadeh" />
+              </div>
               <div class="person-badge">UG</div>
               <h3>Artin Heidarzadeh</h3>
               <p>USRI Student</p>
+              <p class="person-program">Kinesiology</p>
             </article>
           </div>
         </div>
