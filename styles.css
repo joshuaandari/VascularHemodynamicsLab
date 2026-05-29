@@ -830,7 +830,7 @@ h3 {
 
 .about-image {
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   margin-top: 1.25rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
@@ -1047,6 +1047,20 @@ h3 {
   transform: translateY(-2px);
 }
 
+.person-card:has(.card-cover-link)::after {
+  content: "View profile";
+  position: absolute;
+  bottom: 1.55rem;
+  left: 1.6rem;
+  z-index: 2;
+  pointer-events: none;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+
 .card-cover-link {
   position: absolute;
   inset: 0;
@@ -1057,6 +1071,7 @@ h3 {
 .person-card-with-photo {
   padding-top: 1.45rem;
   padding-right: 11rem;
+  padding-bottom: 5rem;
   min-height: 275px;
 }
 
@@ -1065,7 +1080,7 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100%;
-  padding: 1.85rem 1.85rem 2.05rem;
+  padding: 1.85rem 1.85rem 5rem;
 }
 
 .info-card h3,
