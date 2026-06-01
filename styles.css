@@ -1148,6 +1148,11 @@ h3 {
   object-position: center;
 }
 
+.person-photo-frame img.photo-position-top,
+.member-photo.photo-position-top {
+  object-position: center top;
+}
+
 .profile-link {
   position: relative;
   z-index: 3;
