@@ -9,7 +9,7 @@ if (menuToggle && siteNav) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".hero-copy, .hero-visual-frame, .hero-link-card, .participate-hero-copy, .participate-hero-note, .participate-card, .info-card, .person-card, .publication-item, .contact-panel"
+  ".hero-copy, .hero-visual-frame, .hero-link-card, .participate-hero-copy, .participate-hero-note, .participate-card, .project-info-box, .info-card, .person-card, .publication-item, .contact-panel"
 );
 
 const observer = new IntersectionObserver(

@@ -240,6 +240,13 @@ h3 {
   white-space: nowrap;
 }
 
+.nav-dropdown-menu .nav-subtab {
+  margin-left: 0.85rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(79, 45, 127, 0.22);
+  font-size: 0.94rem;
+}
+
 .nav-dropdown-menu a:hover,
 .nav-dropdown-menu a:focus-visible {
   background: rgba(83, 49, 138, 0.08);
@@ -547,6 +554,62 @@ h3 {
 
 .participate-form-heading h2 {
   margin-top: 0;
+}
+
+.current-projects-page {
+  padding-top: 3rem;
+}
+
+.current-projects-hero {
+  margin-bottom: 1.75rem;
+}
+
+.current-projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.current-project-card {
+  scroll-margin-top: 180px;
+}
+
+.project-card-heading {
+  max-width: 880px;
+}
+
+.project-card-heading .section-label {
+  margin-bottom: 0.6rem;
+}
+
+.project-card-heading h2 {
+  margin-top: 0;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+}
+
+.project-card-heading p {
+  margin-bottom: 0;
+}
+
+.project-info-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-info-box {
+  padding: 1.25rem;
+  border: 1px solid rgba(16, 33, 38, 0.08);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.project-info-box h3 {
+  font-size: 1.1rem;
+}
+
+.project-info-box p {
+  margin-bottom: 0;
 }
 
 .participation-form {
@@ -1023,10 +1086,53 @@ h3 {
 }
 
 .projects-scroll {
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
   padding-right: 0.35rem;
+}
+
+.project-summary-box {
+  padding: 1rem;
+  border: 1px solid rgba(16, 33, 38, 0.18);
+  border-radius: var(--radius-sm);
+  background: transparent;
+}
+
+.projects-scroll h4 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.project-summary-box p {
+  margin: 0;
+}
+
+.project-title-link {
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.project-title-link:hover,
+.project-title-link:focus-visible {
+  color: #1d4ed8;
+}
+
+.projects-scroll ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.projects-scroll li {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .person-card {
@@ -1416,6 +1522,10 @@ h3 {
   object-fit: contain;
 }
 
+.affiliation-logo-square {
+  max-height: 118px;
+}
+
 .site-footer {
   padding: 2rem 0 3rem;
 }
@@ -1449,6 +1559,7 @@ h3 {
   .publication-item,
   .cards-grid,
   .about-cards-grid,
+  .project-info-boxes,
   .people-grid {
     grid-template-columns: 1fr;
   }
