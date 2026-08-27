@@ -410,6 +410,26 @@ h3 {
   padding-bottom: 5.5rem;
 }
 
+.member-copy-panel-long {
+  padding-bottom: 1.7rem;
+}
+
+.member-profile-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin-top: 1.35rem;
+}
+
+.member-profile-links .profile-social {
+  position: static;
+  flex: 0 0 auto;
+}
+
+.member-profile-links .profile-orcid {
+  right: auto;
+}
+
 .member-photo {
   width: 100%;
   aspect-ratio: 1;
@@ -463,6 +483,103 @@ h3 {
 
 .member-copy-panel .profile-orcid {
   right: 1.7rem;
+}
+
+.member-projects-section {
+  padding: 2.5rem 0 4rem;
+  background: #ffffff;
+}
+
+.member-profile-details-section {
+  padding: 2.5rem 0 4rem;
+  background: #ffffff;
+}
+
+.member-profile-details {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile-detail-card {
+  padding: 1.35rem;
+}
+
+.profile-detail-card h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.35rem;
+}
+
+.profile-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.profile-detail-box,
+.profile-publication-item {
+  padding: 1rem;
+  border: 1px solid rgba(16, 33, 38, 0.18);
+  border-radius: var(--radius-sm);
+  background: transparent;
+}
+
+.profile-detail-box h3,
+.profile-publication-item h3 {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.profile-detail-box p,
+.profile-publication-item p {
+  margin-bottom: 0;
+}
+
+.profile-publication-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.member-projects-panel {
+  max-width: 720px;
+  padding: 1.35rem;
+}
+
+.member-projects-panel h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.35rem;
+}
+
+.member-projects-list {
+  display: grid;
+  gap: 0.85rem;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 0.35rem;
+}
+
+.member-project-item {
+  padding: 1rem;
+  border: 1px solid rgba(16, 33, 38, 0.18);
+  border-radius: var(--radius-sm);
+  background: transparent;
+}
+
+.member-project-item a {
+  color: var(--primary-dark);
+  font-weight: 800;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.member-project-item a:hover,
+.member-project-item a:focus-visible {
+  color: #1d4ed8;
+}
+
+.member-project-item p {
+  margin: 0.7rem 0 0;
 }
 
 .participate-hero {
@@ -567,6 +684,20 @@ h3 {
 .current-projects-grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.current-projects-next-step {
+  margin-top: 1.5rem;
+  padding: 1.35rem;
+}
+
+.current-projects-next-step h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.current-projects-next-step p {
+  max-width: 720px;
 }
 
 .current-project-card {
@@ -1153,6 +1284,15 @@ h3 {
   transform: translateY(-2px);
 }
 
+.person-name-link {
+  transition: color 160ms ease;
+}
+
+.person-name-link:hover,
+.person-name-link:focus-visible {
+  color: #1d4ed8;
+}
+
 .person-card:has(.card-cover-link)::after {
   content: "View profile";
   position: absolute;
@@ -1559,6 +1699,7 @@ h3 {
   .publication-item,
   .cards-grid,
   .about-cards-grid,
+  .profile-detail-grid,
   .project-info-boxes,
   .people-grid {
     grid-template-columns: 1fr;
