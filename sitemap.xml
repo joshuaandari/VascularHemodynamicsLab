@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://vbmlab.ca/</loc>
+    <image:image>
+      <image:loc>https://vbmlab.ca/photos/uwo.png</image:loc>
+      <image:title>Western University logo for the VBM Lab website</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://vbmlab.ca/current-projects.html</loc>
